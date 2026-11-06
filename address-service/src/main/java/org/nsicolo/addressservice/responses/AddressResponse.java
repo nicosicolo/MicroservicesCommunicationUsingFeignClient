@@ -6,7 +6,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class AddressResponse {
-    private String City;
-    private String State;
-    private Long employeeId;
+    private String city;
+    private String state;
 }
