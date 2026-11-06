@@ -9,7 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController(value = "/employee")
+@RestController
+@RequestMapping(path = "${employeeApiPrefix}/employees")
 public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
@@ -25,5 +26,4 @@ public class EmployeeController {
     public ErrorResponse handleEmployeeNotFoundException(EmployeeNotFoundException exception) {
         return new ErrorResponse(HttpStatus.NOT_FOUND.value(), exception.getMessage());
     }
-
 }
