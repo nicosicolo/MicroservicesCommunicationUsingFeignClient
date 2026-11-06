@@ -1,4 +1,4 @@
-package org.nsicolo.microservicescommunicationusingfeignclient.reponse;
+package org.nsicolo.microservicescommunicationusingfeignclient.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,6 +9,6 @@ import org.springframework.http.HttpStatus;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ErrorResponse {
+    private int statusCode;
     private String message;
-    private HttpStatus statusCode;
 }

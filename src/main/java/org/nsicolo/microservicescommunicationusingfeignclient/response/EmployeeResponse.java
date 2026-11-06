@@ -1,4 +1,4 @@
-package org.nsicolo.microservicescommunicationusingfeignclient.reponse;
+package org.nsicolo.microservicescommunicationusingfeignclient.response;
 
 import lombok.Getter;
 import lombok.Setter;
